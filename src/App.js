@@ -2,9 +2,9 @@
 import Democlass from './components/react components/democlass';
 import { Component } from 'react';
 
-// import Apiinter from './components/apiinter';
-// import Viewsdetails from './components/viewdetails';
-// import Firstpage from './components/firstpage';
+import Apiinter from './components/apiinter';
+import Viewsdetails from './components/viewdetails';
+import Firstpage from './components/firstpage';
 
 export default class App extends Component{
   constructor(props){
@@ -20,13 +20,13 @@ export default class App extends Component{
       <>
         <Democlass name={this.name} age={this.age} place={this.place}/>
 
-        {/* <Router>
+        <Router>
       <Routes>
         <Route exact path="/" element={<Apiinter/>}/>
         <Route exact path="/firspage" element={<Firstpage/>}/>
         <Route exact path="/viewdetails/:id" element={<Viewsdetails/>}/>
       </Routes>
-    </Router> */}
+    </Router>
       </>
     )
   }
